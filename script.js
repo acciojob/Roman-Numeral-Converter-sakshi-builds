@@ -1,15 +1,15 @@
 function convertToRoman(num) {
-  	const obj = {
-      0:['M',1000], 
-      1:['D', 500], 
-      2:['C', 100], 
-      3:['L', 50], 
-      4:['X', 10], 
-      5:['V', 5], 
-      6:['I', 1]
-    };
-
-  //your code here
+  let value=[1000,500,100,50,10,5,1];
+	let result="";
+	let sumbol=['M','D','C','L','X','V','I'];
+	for(let i=0;i<value.length;i++){
+		while(num>=value[i]){
+			result=result+symbol[i];
+			num=num-value[i];
+		}
+	}
+return result;
+  
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
